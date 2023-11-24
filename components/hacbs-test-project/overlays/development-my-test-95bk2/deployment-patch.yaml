@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: hacbs-test-project
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/rhn-support-djodha-tenant/hacbs-test-project/hacbs-test-project@sha256:4e73cc99d8c47eadb60c18c40477ad02e82e84fd5feb683c4b0f83ac28e631af
+        name: hacbs-jvm-build-test-project
+        resources: {}
+status: {}
